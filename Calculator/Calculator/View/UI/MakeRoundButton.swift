@@ -8,5 +8,9 @@
 import UIKit
 
 class MakeRoundButton: UIButton {
-
+  var isRoundButton: Bool = false {
+        didSet {
+            self.layer.cornerRadius = self.frame.height / 2
+        }
+    }
 }
