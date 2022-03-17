@@ -58,8 +58,8 @@
 		7F46B95927E323B300BEF3DD /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				7F46B97127E33B6600BEF3DD /* View */,
 				7F46B97027E33B5300BEF3DD /* Controllers */,
+				7F46B97127E33B6600BEF3DD /* View */,
 				7F46B96827E323B500BEF3DD /* Info.plist */,
 			);
 			path = Calculator;
