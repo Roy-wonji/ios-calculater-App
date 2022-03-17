@@ -16,6 +16,8 @@
 		7F46B96F27E33B4F00BEF3DD /* MakeRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46B96E27E33B4F00BEF3DD /* MakeRoundButton.swift */; };
 		7F46B97527E365AF00BEF3DD /* OperationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46B97427E365AF00BEF3DD /* OperationCalculator.swift */; };
 		7F46B97727E3668600BEF3DD /* CalcultorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46B97627E3668600BEF3DD /* CalcultorError.swift */; };
+		7F46B97A27E367D200BEF3DD /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46B97927E367D200BEF3DD /* common.swift */; };
+		7F46B97D27E369AE00BEF3DD /* InitialValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46B97C27E369AE00BEF3DD /* InitialValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7F46B96E27E33B4F00BEF3DD /* MakeRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeRoundButton.swift; sourceTree = "<group>"; };
 		7F46B97427E365AF00BEF3DD /* OperationCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationCalculator.swift; sourceTree = "<group>"; };
 		7F46B97627E3668600BEF3DD /* CalcultorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcultorError.swift; sourceTree = "<group>"; };
+		7F46B97927E367D200BEF3DD /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		7F46B97C27E369AE00BEF3DD /* InitialValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				7F46B97027E33B5300BEF3DD /* Controllers */,
 				7F46B97127E33B6600BEF3DD /* View */,
 				7F46B96827E323B500BEF3DD /* Info.plist */,
+				7F46B97927E367D200BEF3DD /* common.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 		7F46B97327E3651500BEF3DD /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				7F46B97B27E3698800BEF3DD /* Init */,
 				7F46B97427E365AF00BEF3DD /* OperationCalculator.swift */,
 			);
 			path = Modal;
@@ -114,6 +120,14 @@
 				7F46B97627E3668600BEF3DD /* CalcultorError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		7F46B97B27E3698800BEF3DD /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				7F46B97C27E369AE00BEF3DD /* InitialValue.swift */,
+			);
+			path = Init;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F46B97A27E367D200BEF3DD /* common.swift in Sources */,
 				7F46B97527E365AF00BEF3DD /* OperationCalculator.swift in Sources */,
 				7F46B95F27E323B300BEF3DD /* CalcultorViewController.swift in Sources */,
 				7F46B97727E3668600BEF3DD /* CalcultorError.swift in Sources */,
+				7F46B97D27E369AE00BEF3DD /* InitialValue.swift in Sources */,
 				7F46B95B27E323B300BEF3DD /* AppDelegate.swift in Sources */,
 				7F46B96F27E33B4F00BEF3DD /* MakeRoundButton.swift in Sources */,
 				7F46B95D27E323B300BEF3DD /* SceneDelegate.swift in Sources */,
