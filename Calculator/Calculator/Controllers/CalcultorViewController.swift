@@ -2,21 +2,27 @@
 //  ViewController.swift
 //  Calculator
 //
-//  Created by 서원지 on 2022/03/17.
+//  Created by 서원지 on 2022/03/18.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalcultorViewController: UIViewController {
+
     @IBOutlet weak var numberOutputLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+
+
     @IBAction func NumberButtonTapped(_ sender: UIButton) {
-        
+        guard let numberValue = sender.title(for: .normal) else  {return}
+        if  displayNumberLabel.count < 9 {
+            displayNumberLabel += numberValue
+            numberOutputLabel.text = displayNumberLabel
+        }
     }
     
     @IBAction func clearButtonTapped(_ sender: UIButton) {
@@ -35,11 +41,11 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func mutiplyButtonTapped(_ sender: UIButton) {
+    @IBAction func mutiplyButtonTapped(_ sender: Any) {
         
     }
     
-    @IBAction func subtractButtonTapped(_ sender: Any) {
+    @IBAction func subtractButtonTapped(_ sender: UIButton) {
         
     }
     
