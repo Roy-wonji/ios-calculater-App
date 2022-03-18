@@ -12,7 +12,7 @@ enum InitialValue {
     static var firstCalculation = ""
     static var newCalculation = ""
     static var result = ""
-    static var currentOperation: CalcultorError = .buttonError
+    static var currentOperation: OperationCalculator = .unknown
 }
 
 

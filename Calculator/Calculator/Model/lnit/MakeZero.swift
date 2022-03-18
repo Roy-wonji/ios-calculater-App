@@ -12,6 +12,6 @@ func makeZeroValue() {
     InitialValue.firstCalculation = ""
     InitialValue.newCalculation = ""
     InitialValue.result = ""
-    InitialValue.currentOperation = .buttonError
+    InitialValue.currentOperation = .unknown
     
 }
