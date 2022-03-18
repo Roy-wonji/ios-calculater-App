@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CalcultorError {
-    case buttonError
+enum CalcultorError: Error {
+    case operationError
 }
