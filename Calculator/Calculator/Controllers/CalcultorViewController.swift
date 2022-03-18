@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CalcultorViewController.swift
 //  Calculator
 //
 //  Created by 서원지 on 2022/03/18.
@@ -19,9 +19,9 @@ class CalcultorViewController: UIViewController {
 
     @IBAction func NumberButtonTapped(_ sender: UIButton) {
         guard let numberValue = sender.title(for: .normal) else  {return}
-        if  displayNumberLabel.count < 9 {
-            displayNumberLabel += numberValue
-            numberOutputLabel.text = displayNumberLabel
+        if  InitialValue.displayNumberLabel.count < 9 {
+            InitialValue.displayNumberLabel += numberValue
+            numberOutputLabel.text = InitialValue.displayNumberLabel
         }
     }
     

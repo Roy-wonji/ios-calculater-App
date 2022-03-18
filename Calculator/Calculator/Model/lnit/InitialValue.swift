@@ -7,10 +7,12 @@
 
 import Foundation
 
+enum InitialValue {
+    static var displayNumberLabel = ""
+    static var firstCalculation = ""
+    static var newCalculation = ""
+    static var result = ""
+    static var currentOperation: CalcultorError = .buttonError
+}
 
-var displayNumberLabel = ""
-var firstCalculation = ""
-var newCalculation = ""
-var result = ""
-var currentOperation: OperationCalculator = .unknown
 
