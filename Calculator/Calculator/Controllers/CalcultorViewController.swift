@@ -57,8 +57,8 @@ class CalcultorViewController: UIViewController {
     }
     
     @IBAction func dotButtonTapped(_ sender: UIButton) {
-        
+        makeDotValue()
+        numberOutputLabel.text = InitialValue.displayNumberLabel
     }
-    
 }
 

@@ -18,6 +18,7 @@
 		7F93D56827E439D500A76387 /* InitialValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D56727E439D500A76387 /* InitialValue.swift */; };
 		7F93D56B27E43D6A00A76387 /* CalcultorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D56A27E43D6900A76387 /* CalcultorError.swift */; };
 		7F93D56D27E43FDD00A76387 /* MakeZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D56C27E43FDD00A76387 /* MakeZero.swift */; };
+		7F93D57027E4428300A76387 /* MakeDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D56F27E4428300A76387 /* MakeDot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7F93D56727E439D500A76387 /* InitialValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialValue.swift; sourceTree = "<group>"; };
 		7F93D56A27E43D6900A76387 /* CalcultorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcultorError.swift; sourceTree = "<group>"; };
 		7F93D56C27E43FDD00A76387 /* MakeZero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeZero.swift; sourceTree = "<group>"; };
+		7F93D56F27E4428300A76387 /* MakeDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		7F93D55927E4305900A76387 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F93D56E27E4426300A76387 /* Dot */,
 				7F93D56627E439BE00A76387 /* lnit */,
 				7F93D56427E4398900A76387 /* OperationCalculator.swift */,
 			);
@@ -136,6 +139,14 @@
 				7F93D56A27E43D6900A76387 /* CalcultorError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		7F93D56E27E4426300A76387 /* Dot */ = {
+			isa = PBXGroup;
+			children = (
+				7F93D56F27E4428300A76387 /* MakeDot.swift */,
+			);
+			path = Dot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F93D57027E4428300A76387 /* MakeDot.swift in Sources */,
 				7F93D56B27E43D6A00A76387 /* CalcultorError.swift in Sources */,
 				7F93D56527E4398900A76387 /* OperationCalculator.swift in Sources */,
 				7F93D54827E42F5100A76387 /* CalcultorViewController.swift in Sources */,
