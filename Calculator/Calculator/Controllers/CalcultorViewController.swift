@@ -8,14 +8,12 @@
 import UIKit
 
 class CalcultorViewController: UIViewController {
-
     @IBOutlet weak var numberOutputLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
 
     @IBAction func NumberButtonTapped(_ sender: UIButton) {
         guard let numberValue = sender.title(for: .normal) else  {return}
@@ -26,13 +24,8 @@ class CalcultorViewController: UIViewController {
     }
     
     @IBAction func clearButtonTapped(_ sender: UIButton) {
-        InitialValue.displayNumberLabel = ""
-        InitialValue.firstCalculation = ""
-        InitialValue.newCalculation = ""
-        InitialValue.result = ""
-        InitialValue.currentOperation = .buttonError
-        self.numberOutputLabel.text =  "0"
-        
+        makeZeroValue()
+        numberOutputLabel.text =  "0"
     }
     
     @IBAction func additionSubtractionOperatorButtonTapped(_ sender: UIButton) {
