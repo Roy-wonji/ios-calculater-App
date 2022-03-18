@@ -7,7 +7,7 @@
 
 import Foundation
 
-func opearationValue() {
+ func opearationValue() {
     guard let fristOperation = Double(InitialValue.firstCalculation) else  { return }
     guard let secondOpertaion = Double(InitialValue.newCalculation) else { return }
     
@@ -30,6 +30,5 @@ func opearationValue() {
         InitialValue.result = String(fristOperation.truncatingRemainder(dividingBy: 100 / secondOpertaion))
     default:
         CalcultorError.operationError
-    } 
-    
+    }
 } 

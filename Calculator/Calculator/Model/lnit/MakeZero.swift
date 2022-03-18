@@ -7,11 +7,10 @@
 
 import Foundation
 
-func makeZeroValue() {
+ func makeZeroValue() {
     InitialValue.displayNumberLabel = ""
     InitialValue.firstCalculation = ""
     InitialValue.newCalculation = ""
     InitialValue.result = ""
     InitialValue.currentOperation = .unknown
-    
 }

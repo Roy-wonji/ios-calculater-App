@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum InitialValue {
+ enum InitialValue {
     static var displayNumberLabel = ""
     static var firstCalculation = ""
     static var newCalculation = ""

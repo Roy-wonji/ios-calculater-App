@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CalcultorViewController: UIViewController {
+final class CalcultorViewController: UIViewController {
     static let shared: CalcultorViewController = CalcultorViewController()
     
     @IBOutlet weak var numberOutputLabel: UILabel!
@@ -17,7 +17,7 @@ class CalcultorViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func NumberButtonTapped(_ sender: UIButton) {
+    @IBAction private func NumberButtonTapped(_ sender: UIButton) {
         guard let numberValue = sender.title(for: .normal) else  {return}
         if  InitialValue.displayNumberLabel.count < 9 {
             InitialValue.displayNumberLabel += numberValue
@@ -25,45 +25,45 @@ class CalcultorViewController: UIViewController {
         }
     }
     
-    @IBAction func clearButtonTapped(_ sender: UIButton) {
+    @IBAction private func clearButtonTapped(_ sender: UIButton) {
         makeZeroValue()
         numberOutputLabel.text =  "0"
     }
     
-    @IBAction func additionSubtractionOperatorButtonTapped(_ sender: UIButton) {
+    @IBAction private func additionSubtractionOperatorButtonTapped(_ sender: UIButton) {
         operation(.additionSubtractionOperator)
     }
     
-    @IBAction func percentageButtonTapped(_ sender: UIButton) {
+    @IBAction private func percentageButtonTapped(_ sender: UIButton) {
         operation(.percentage)
     }
     
-    @IBAction func divideButtonTapped(_ sender: UIButton) {
+    @IBAction private func divideButtonTapped(_ sender: UIButton) {
         operation(.divide)
     }
     
-    @IBAction func mutiplyButtonTapped(_ sender: Any) {
+    @IBAction private func mutiplyButtonTapped(_ sender: Any) {
         operation(.mutiply)
     }
     
-    @IBAction func subtractButtonTapped(_ sender: UIButton) {
+    @IBAction private func subtractButtonTapped(_ sender: UIButton) {
         operation(.subtract)
     }
     
-    @IBAction func addButtonTapped(_ sender: UIButton) {
+    @IBAction private func addButtonTapped(_ sender: UIButton) {
         operation(.add)
     }
     
-    @IBAction func equalButtonTapped(_ sender: UIButton) {
+    @IBAction private func equalButtonTapped(_ sender: UIButton) {
         operation(InitialValue.currentOperation)
     }
     
-    @IBAction func dotButtonTapped(_ sender: UIButton) {
+    @IBAction private func dotButtonTapped(_ sender: UIButton) {
         makeDotValue()
         numberOutputLabel.text = InitialValue.displayNumberLabel
     }
     
-    func operation( _ operation: OperationCalculator) {
+    private func operation( _ operation: OperationCalculator) {
         if InitialValue.currentOperation != .unknown {
             if !InitialValue.displayNumberLabel.isEmpty {
                 InitialValue.newCalculation = InitialValue.displayNumberLabel
