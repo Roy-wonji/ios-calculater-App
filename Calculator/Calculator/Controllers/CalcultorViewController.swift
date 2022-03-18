@@ -26,6 +26,12 @@ class CalcultorViewController: UIViewController {
     }
     
     @IBAction func clearButtonTapped(_ sender: UIButton) {
+        InitialValue.displayNumberLabel = ""
+        InitialValue.firstCalculation = ""
+        InitialValue.newCalculation = ""
+        InitialValue.result = ""
+        InitialValue.currentOperation = .buttonError
+        self.numberOutputLabel.text =  "0"
         
     }
     
