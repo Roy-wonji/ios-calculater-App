@@ -2,7 +2,7 @@
 //  CalcultorViewController.swift
 //  Calculator
 //
-//  Created by 서원지 on 2022/03/18.
+//  Created by Roy on 2022/03/22.
 //
 
 import UIKit
@@ -12,6 +12,11 @@ final class CalcultorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var calc = Operation(baseNumber: 3, operationNodes:[OperationNode(operators: .plus, operand: 5),
+                                                     OperationNode(operators: .multiply, operand: 2)] )
+       
+        let result = calc.mergeOperationNodes()
         // Do any additional setup after loading the view.
     }
     

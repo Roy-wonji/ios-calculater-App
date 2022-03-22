@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Calculator
 //
-//  Created by 서원지 on 2022/03/18.
+//  Created by Roy on 2022/03/22.
 //
 
 import UIKit
