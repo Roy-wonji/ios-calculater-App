@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 final class MakeRoundButton: UIButton {
    @IBInspectable var isRound: Bool = false {
         didSet {

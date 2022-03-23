@@ -2,64 +2,49 @@
 //  CalcultorViewController.swift
 //  Calculator
 //
-//  Created by Roy on 2022/03/22.
+//  Created by Roy on 2022/03/23.
 //
 
 import UIKit
 
 final class CalcultorViewController: UIViewController {
-    @IBOutlet weak var numberOutputLabel: UILabel!
+    @IBOutlet weak var clearButton: MakeRoundButton!
+    @IBOutlet weak var operationLabel: UILabel!
+    @IBOutlet weak var currentNumberLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var calc = Operation(baseNumber: 3, operationNodes:[OperationNode(operators: .plus, operand: 5),
-                                                     OperationNode(operators: .multiply, operand: 2)] )
-       
-        let result = calc.mergeOperationNodes()
         // Do any additional setup after loading the view.
     }
     
-    @IBAction private func NumberButtonTapped(_ sender: UIButton) {
-       
+    @IBAction func numberPadTapped(_ sender: UIButton) {
+        let buttonNumber  = sender.tag
+        Common.currentNumber = Common.currentNumber * 10  + Double(buttonNumber)
+        currentNumberLabel.text = String(Common.currentNumber)
     }
     
-    @IBAction private func clearButtonTapped(_ sender: UIButton) {
-       
-    }
-    
-    @IBAction private func additionSubtractionOperatorButtonTapped(_ sender: UIButton) {
-       
-    }
-    
-    @IBAction private func percentageButtonTapped(_ sender: UIButton) {
+    @IBAction func clearButtonTapped(_ sender: UIButton) {
         
     }
     
-    @IBAction private func divideButtonTapped(_ sender: UIButton) {
-       
+    @IBAction func plusMinusButtonTapped(_ sender: UIButton) {
+        
     }
     
-    @IBAction private func mutiplyButtonTapped(_ sender: Any) {
-       
+    @IBAction func percentButtonTapped(_ sender: UIButton) {
+        
     }
     
-    @IBAction private func subtractButtonTapped(_ sender: UIButton) {
-       
+    @IBAction func operatorButtonTapped(_ sender: UIButton) {
+        
     }
     
-    @IBAction private func addButtonTapped(_ sender: UIButton) {
-     
+    @IBAction func showReultButtonTapped(_ sender: UIButton) {
+        
     }
     
-    @IBAction private func equalButtonTapped(_ sender: UIButton) {
-     
+    @IBAction func pointButtonTapped(_ sender: UIButton) {
+        
     }
-    
-    @IBAction private func dotButtonTapped(_ sender: UIButton) {
-      
-    }
-    
-   
 }
 
