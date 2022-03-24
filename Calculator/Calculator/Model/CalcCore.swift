@@ -7,17 +7,21 @@
 
 import Foundation
 
-struct Operation {
+struct CalcOperation {
     var baseNumber: Double
-    var operationNodes: [OperationNode]
+    var operationNodes: [CalcOperationNode]
+    init() {
+        self.baseNumber = .zero
+        self.operationNodes = [CalcOperationNode]()
+    }
     
-    init(baseNumber: Double , operationNodes: [OperationNode]) {
+    init(baseNumber: Double , operationNodes: [CalcOperationNode]) {
         self.baseNumber = baseNumber
         self.operationNodes = operationNodes
     }
     
     mutating func mergePriorityNode()  {
-        var mewNodes: [OperationNode] = [ ]
+        var mewNodes: [CalcOperationNode] = [ ]
         for node in self.operationNodes {
             if node.operators == .multiply || node.operators == .divide {
                 let base: Double
@@ -29,7 +33,7 @@ struct Operation {
                     let latestNode = mewNodes.removeLast()
                     base = latestNode.operand
                     let newOPerand = node.operators.doCalc(base, node.operand)
-                    mewNodes.append(OperationNode(opearators: latestNode.operators, operand: newOPerand))
+                    mewNodes.append(CalcOperationNode(opearators: latestNode.operators, operand: newOPerand))
                 }
             } else {
                 mewNodes.append(node)
@@ -38,12 +42,23 @@ struct Operation {
         self.operationNodes = mewNodes
     }
     
-    
-    func mergeOperationNodes() {
+    func mergeOperationNodes() ->  Double {
         let value = operationNodes.reduce(baseNumber ,  {
-            (result: Double , element: OperationNode) in
+            (result: Double , element: CalcOperationNode) in
             element.operators.doCalc(result, element.operand)
         })
-        print(value)
+        return value
+    }
+    
+    mutating func calcResult() -> Double {
+        mergePriorityNode()
+        return mergeOperationNodes()
+    }
+    
+    func operationString() -> String {
+        return operationNodes.reduce(String(baseNumber), {
+            (result: String, element: CalcOperationNode) in
+            result + " " +  element.operators.symbol + " " + String(element.operand)
+        })
     }
 }

@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct OperationNode {
-    var operators: Operator
+struct CalcOperationNode {
+    var operators: CalcOperator
     var operand: Double
     
-    init(opearators: Operator, operand: Double) {
+    init(opearators: CalcOperator, operand: Double) {
         self.operators = opearators
         self.operand = operand
     }

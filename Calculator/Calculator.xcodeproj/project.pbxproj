@@ -16,8 +16,8 @@
 		7F93D56327E437DF00A76387 /* MakeRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D56227E437DF00A76387 /* MakeRoundButton.swift */; };
 		7F93D57627E4CA1A00A76387 /* CalcultorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D57527E4CA1A00A76387 /* CalcultorError.swift */; };
 		7F93D5A627E9FC4500A76387 /* CalcCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D5A527E9FC4500A76387 /* CalcCore.swift */; };
-		7F93D5A827E9FCFE00A76387 /* OperationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D5A727E9FCFE00A76387 /* OperationNode.swift */; };
-		7F93D5AA27E9FE0900A76387 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D5A927E9FE0900A76387 /* Operator.swift */; };
+		7F93D5A827E9FCFE00A76387 /* CalcOperationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D5A727E9FCFE00A76387 /* CalcOperationNode.swift */; };
+		7F93D5AA27E9FE0900A76387 /* CalcOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D5A927E9FE0900A76387 /* CalcOperator.swift */; };
 		7F93D5B427EB51AF00A76387 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93D5B327EB51AF00A76387 /* Common.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +33,8 @@
 		7F93D56227E437DF00A76387 /* MakeRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeRoundButton.swift; sourceTree = "<group>"; };
 		7F93D57527E4CA1A00A76387 /* CalcultorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcultorError.swift; sourceTree = "<group>"; };
 		7F93D5A527E9FC4500A76387 /* CalcCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcCore.swift; sourceTree = "<group>"; };
-		7F93D5A727E9FCFE00A76387 /* OperationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationNode.swift; sourceTree = "<group>"; };
-		7F93D5A927E9FE0900A76387 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		7F93D5A727E9FCFE00A76387 /* CalcOperationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcOperationNode.swift; sourceTree = "<group>"; };
+		7F93D5A927E9FE0900A76387 /* CalcOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcOperator.swift; sourceTree = "<group>"; };
 		7F93D5B327EB51AF00A76387 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,7 @@
 			children = (
 				7F93D5AB27EA031900A76387 /* Node */,
 				7F93D5A527E9FC4500A76387 /* CalcCore.swift */,
-				7F93D5A927E9FE0900A76387 /* Operator.swift */,
+				7F93D5A927E9FE0900A76387 /* CalcOperator.swift */,
 				7F93D5B327EB51AF00A76387 /* Common.swift */,
 			);
 			path = Model;
@@ -144,7 +144,7 @@
 		7F93D5AB27EA031900A76387 /* Node */ = {
 			isa = PBXGroup;
 			children = (
-				7F93D5A727E9FCFE00A76387 /* OperationNode.swift */,
+				7F93D5A727E9FCFE00A76387 /* CalcOperationNode.swift */,
 			);
 			path = Node;
 			sourceTree = "<group>";
@@ -222,11 +222,11 @@
 			files = (
 				7F93D54827E42F5100A76387 /* CalcultorViewController.swift in Sources */,
 				7F93D54427E42F5100A76387 /* AppDelegate.swift in Sources */,
-				7F93D5A827E9FCFE00A76387 /* OperationNode.swift in Sources */,
+				7F93D5A827E9FCFE00A76387 /* CalcOperationNode.swift in Sources */,
 				7F93D56327E437DF00A76387 /* MakeRoundButton.swift in Sources */,
 				7F93D5B427EB51AF00A76387 /* Common.swift in Sources */,
 				7F93D5A627E9FC4500A76387 /* CalcCore.swift in Sources */,
-				7F93D5AA27E9FE0900A76387 /* Operator.swift in Sources */,
+				7F93D5AA27E9FE0900A76387 /* CalcOperator.swift in Sources */,
 				7F93D54627E42F5100A76387 /* SceneDelegate.swift in Sources */,
 				7F93D57627E4CA1A00A76387 /* CalcultorError.swift in Sources */,
 			);

@@ -84,7 +84,7 @@
                                                             <action selector="percentButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVQ-3E-Of3"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tk-av-dkH" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tk-av-dkH" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="249" y="0.0" width="78" height="78"/>
                                                         <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -157,7 +157,7 @@
                                                             <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1Q-3m-bBb"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEX-Ra-tLg" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEX-Ra-tLg" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="249" y="0.0" width="78" height="78"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -230,7 +230,7 @@
                                                             <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jFo-fq-Tlz"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-2C-mTh" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-2C-mTh" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="249" y="0.0" width="78" height="78"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -303,7 +303,7 @@
                                                             <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQP-Ts-lsJ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So0-DO-mPy" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So0-DO-mPy" customClass="MakeRoundButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="249" y="0.0" width="78" height="78"/>
                                                         <color key="backgroundColor" red="0.99607843137254903" green="0.62745098039215685" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>

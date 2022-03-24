@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Operator {
+enum CalcOperator {
     case plus
     case minus
     case multiply
@@ -16,13 +16,26 @@ enum Operator {
     var doCalc:  (Double,  Double)  -> Double {
         switch self {
         case .plus:
-              return (+)
+            return (+)
         case .minus:
             return (-)
         case .multiply:
             return (*)
         case .divide:
             return(/)
+        }
+    }
+    
+    var symbol:  String {
+        switch self {
+        case .plus:
+            return "+"
+        case .minus:
+            return  "-"
+        case .multiply:
+            return "*"
+        case .divide:
+            return ""
         }
     }
 }
