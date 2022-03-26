@@ -35,7 +35,7 @@ enum CalcOperator {
         case .multiply:
             return "*"
         case .divide:
-            return ""
+            return "÷"
         }
     }
 }

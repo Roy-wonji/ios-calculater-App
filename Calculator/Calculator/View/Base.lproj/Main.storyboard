@@ -15,14 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEw-dE-Lgj">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEw-dE-Lgj">
                                 <rect key="frame" x="24" y="124" width="327" height="150"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="QwX-lO-Lyk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0aa-ZP-1fY" appends="YES" id="9z8-dp-8SV"/>
+                                    <outletCollection property="gestureRecognizers" destination="TW6-xK-mGr" appends="YES" id="GZt-f7-ErK"/>
+                                </connections>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-di-cMz">
                                 <rect key="frame" x="24" y="298" width="327" height="456"/>
@@ -393,8 +398,8 @@
                                     <constraint firstAttribute="trailing" secondItem="af7-XT-5fc" secondAttribute="trailing" id="Y5l-9h-qXg"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mn-3p-Def">
-                                <rect key="frame" x="24" y="40" width="327" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mn-3p-Def">
+                                <rect key="frame" x="24" y="66" width="327" height="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -406,8 +411,8 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Mn-3p-Def" secondAttribute="trailing" constant="24" id="3Ww-FW-RHk"/>
                             <constraint firstItem="WCX-di-cMz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="4Ug-F0-uKu"/>
-                            <constraint firstItem="cEw-dE-Lgj" firstAttribute="top" secondItem="8Mn-3p-Def" secondAttribute="bottom" constant="34" id="8ZC-UF-GFn"/>
-                            <constraint firstItem="8Mn-3p-Def" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="BHa-wG-gJr"/>
+                            <constraint firstItem="cEw-dE-Lgj" firstAttribute="top" secondItem="8Mn-3p-Def" secondAttribute="bottom" constant="8" id="8ZC-UF-GFn"/>
+                            <constraint firstItem="8Mn-3p-Def" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="66" id="BHa-wG-gJr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WCX-di-cMz" secondAttribute="bottom" constant="24" id="KAG-kD-JSj"/>
                             <constraint firstItem="cEw-dE-Lgj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="RHC-CR-dhU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cEw-dE-Lgj" secondAttribute="trailing" constant="24" id="Uk6-xn-AKS"/>
@@ -424,6 +429,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0aa-ZP-1fY">
+                    <connections>
+                        <action selector="deleteNumber:" destination="BYZ-38-t0r" id="WW4-di-uc3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="TW6-xK-mGr">
+                    <connections>
+                        <action selector="deleteNumber:" destination="BYZ-38-t0r" id="vIe-VI-ixO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="97.536945812807886"/>
         </scene>
